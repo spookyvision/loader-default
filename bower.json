@@ -1,6 +1,6 @@
 {
   "name": "aurelia-loader-default",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A default implementation of the loader interface compatible with system.js and require-based loaders.",
   "keywords": [
     "aurelia",
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/aurelia/loader-default"
+    "url": "http://github.com/spookyvision/loader-default"
   },
   "dependencies": {
     "aurelia-loader": "^1.0.0",
