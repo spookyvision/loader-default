@@ -126,7 +126,7 @@ if (!PLATFORM.global.System || !PLATFORM.global.System.import) {
   };
 
   DefaultLoader.prototype.applyPluginToUrl = function (url, pluginName) {
-    return `${ pluginName }!${ url }`;
+    return `${pluginName}!${url}`;
   };
 
   DefaultLoader.prototype.addPlugin = function (pluginName, implementation) {
@@ -174,7 +174,7 @@ if (!PLATFORM.global.System || !PLATFORM.global.System.import) {
   };
 
   DefaultLoader.prototype.map = function (id, source) {
-    System.map[id] = source;
+    System.config({ map: { [id]: source } });
   };
 
   DefaultLoader.prototype.normalizeSync = function (moduleId, relativeTo) {
@@ -186,7 +186,7 @@ if (!PLATFORM.global.System || !PLATFORM.global.System.import) {
   };
 
   DefaultLoader.prototype.applyPluginToUrl = function (url, pluginName) {
-    return `${ url }!${ pluginName }`;
+    return `${url}!${pluginName}`;
   };
 
   DefaultLoader.prototype.addPlugin = function (pluginName, implementation) {
